@@ -12,3 +12,17 @@ function fibo(num = 0) {
   )}\nResultado de la serie de fibonacci: ${num} `;
 }
 console.log(fibo(150));
+
+
+function fibonacci(n) {
+  if (n == 0) {
+    return 0;
+  } else if (n == 1) {
+    return 1;
+  } else {
+    console.log(n)
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  }
+}
+
+console.log('Result is', fibonacci(10));
